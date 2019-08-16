@@ -1,0 +1,101 @@
+@import "demo";
+
+li {
+  .icon {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    fill: #848484;
+  }
+  &:hover {
+    .icon {
+      fill: #24B54F;
+    }
+  }
+}
+.newButton, .newButton-inline {
+  columns: 1;
+  margin-top: 2em;
+
+  button {
+    border: 1px solid #bebebe;
+    border-radius: 4px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    font-size: 1.4rem;
+    padding: 0 16px;
+    color: #494949;
+    font-size: 14px;
+    cursor: pointer;
+    // transition: 0.2s all ease;
+    box-sizing: border-box;
+
+    img {
+      margin-right: 8px;
+    }
+    &:hover {
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+      // border: none;
+
+      // img {
+      //   fill: limegreen;
+      // }
+    }
+
+  }
+}
+
+.newButton-inline {
+
+  svg {
+    fill: #848484;
+    transition: .2s all ease;
+  }
+
+  &:hover {
+
+    fill: #BADA55;
+
+    button {
+
+      svg {
+        fill: #24B54F;
+      }
+    }
+
+
+  }
+}
+
+
+
+/// buttons test
+
+.principal,
+.strong {
+  margin-left: 100px;
+  height: 40px;
+  min-width: 148px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 500px;
+  cursor: pointer;
+  background: linear-gradient(133deg, #FCCC02, #FF6333);
+  transition: 0.1s all ease;
+
+  &:hover {
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.25);
+  }
+}
+
+.strong {
+  $primary_left: #24B54F;
+  $primary_right: #44A0A3;
+  background: linear-gradient(135deg, $primary_left, $primary_right);
+  border-radius: 8px;
+  min-width: 100px;
+}
